@@ -1,0 +1,12 @@
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image{
+    margin: 5px 2px;
+    width: 200px;
+    height: 200px;
+}

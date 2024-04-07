@@ -1,0 +1,117 @@
+.infinity-logo {
+  width: 45px;
+  height: 20px;
+  display: inline;
+}
+.header-infinity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  > h1 {
+    margin: 0 10px;
+    font-size: 30px;
+    color: red;
+  }
+}
+
+.line,.social-id-signin-container{
+    text-align: center;
+}
+
+.social-media-container {
+  margin: 50px;
+  > span {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 20px 14px 10px 14px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px 1px;
+    > img {
+      width: 20px;
+      height: 25px;
+      background-color: #fff;
+    }
+  }
+}
+
+.passwordConatiner {
+  width: fit-content;
+  border: 1px solid black;
+  > input {
+    border: none;
+  }
+}
+
+.passwordConatiner {
+  width: fit-content;
+  border: 1px solid black;
+  > input {
+    border: none;
+  }
+}
+
+.input-name,
+.input-email {
+  display: block;
+}
+
+.container {
+  padding: 0 50px;
+  text-align: center;
+}
+
+.input-name,
+.input-email,
+.red-input-email {
+  margin: 10px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 18px;
+  border: 1px solid black;
+}
+
+.input-email {
+  border: 2px solid red;
+  outline: none;
+}
+.passwordConatiner {
+  border-radius: 50px;
+  display: flex;
+  width: 250px;
+  margin: 10px;
+  > input {
+    border-radius: 30px;
+    padding: 8px 12px;
+    font-size: 18px;
+    outline: none;
+    width: 80%;
+  }
+}
+
+.password-view {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.email-warning,
+.all-warning span {
+  margin: 0;
+  text-align: end;
+  padding: 0;
+  display: block;
+  color: red;
+  font-size: 10px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0  100px;
+}
