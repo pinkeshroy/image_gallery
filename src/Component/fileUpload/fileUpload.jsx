@@ -13,7 +13,6 @@ import { setImageList } from "../../redux/slice";
 export function FileUpload() {
   // const cld = new Cloudinary({ cloud: { cloudName: "dzmvxu5uw" } });
   const imageList = useSelector((state) => state.image);
-  console.log(imageList);
   const dispatch = useDispatch();
   const [onDropImg, setImageOnDrop] = useState([]);
   const [imageIds, setImageId] = useState([]);
@@ -28,12 +27,11 @@ export function FileUpload() {
   // },[])
 
   function onDropFile(files) {  
-    setImageOnDrop(files)
+    dispatch(setImageList(files));
   }
-console.log({onDropImg})
   function onDelete(index) {
     const newimgList = imageList.filter((elem, idx) => idx !== index);
-    // setImageList(newimgList);
+    setImageList(newimgList);
   }
   async function onSave(file) {
     try {
@@ -65,6 +63,7 @@ console.log({onDropImg})
       };
     });
   };
+  console.log({imageList})
   return (
     <>
       <DragAndDrop onDropFile={onDropFile} />

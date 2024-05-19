@@ -10,22 +10,24 @@ function App() {
   return (
       <div className="App">
         <div className="main-container">
-          {!isImageGallery && <PagesContainerHeader />}
-          <BrowserRouter>
-            <Routes>
-              <Route
-                path="/"
-                element={<SignIn setImageGallery={setImageGallery} />}
-              />
-              <Route path="/signUp" element={<SignUp />}/>
-              <Route path="/image-gallery" element={<FileUpload />} />
-            </Routes>
-          </BrowserRouter>
+          { <FileUpload />}
+          
         </div>
-        {!isImageGallery && <div className="right-container"></div>}
-      </div>
-  );
-}
-
-
-export default App;
+        </div>
+      );
+    }
+    
+    
+    export default App;
+    
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route
+    //       path="/"
+    //       element={<SignIn setImageGallery={setImageGallery} />}
+    //     />
+    //     <Route path="/signUp" element={<SignUp />}/>
+    //     <Route path="/image-gallery" element={<FileUpload />} />
+    //   </Routes>
+    // </BrowserRouter>
+    // {!isImageGallery && <div className="right-container"></div>}

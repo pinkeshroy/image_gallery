@@ -6,7 +6,6 @@ export function DragAndDrop({onDropFile}) {
   const [isDrageActive, setDrageActive] = useState(false);
 
   function setImageOnDrop(files) {
-    console.log({files})
     const fileValue = Object.values(files);
     const fileList = fileValue.map((file, idx) => {
       return {
